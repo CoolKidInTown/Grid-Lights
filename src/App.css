@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid{
+  display: grid;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid black;
+}
+/*
+max-width: 300px;
+
+This limits the maximum width of the grid container to 300px. The container will not grow wider than this value,
+even if there is more available space.
+
+width: 100%;
+
+This sets the width of the grid container to 100% of its parent container's width. However, due to max-width: 300px,
+it will cap at 300px if the parent is wider.
+*/
+
+.cell{
+  background-color: transparent;
+  border: 1px solid #000;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.cell-activated{
+  background-color: green;
+}
