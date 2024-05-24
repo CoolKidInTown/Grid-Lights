@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 // make new Component
-function Cell({filled, onClick, isDisabled, label}) {
+function Cell({filled, onClick, isDisabled, label}) { // isDisabled and label optional but important
   return <button type='button' 
           onClick={onClick} aria-label={label}
           disabled={isDisabled}
